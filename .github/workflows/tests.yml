@@ -46,6 +46,9 @@ jobs:
     
     steps:
       - uses: actions/checkout@v3
+      - name: Show trigger source
+        run: |
+            echo "Trigger source: ${{ github.event.inputs.trigger }}"  
       - name: Adds postgres host to devConfig.yaml
         run: "sed -i 's/# postgresql_host:/postgresql_host: postgres/g' ./devConfig.yaml"
       - name: Cloning supertokens-root
