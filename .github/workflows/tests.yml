@@ -21,7 +21,7 @@ on:
       trigger:
         description: 'Trigger event'     
         required: false
-        default: "Running Tests with\ncore@${{ github.event.inputs.coreRepoBranch }},${{ github.event.inputs.coreRepoOwnerName }}\nplugin-interface,${{ github.event.inputs.pluginInterfaceBranch }},${{ github.event.inputs.pluginRepoOwnerName }}\nsql-plugin,master""
+        default: "Running Tests with\ncore@${{ github.event.inputs.coreRepoBranch }},${{ github.event.inputs.coreRepoOwnerName }}\nplugin-interface,${{ github.event.inputs.pluginInterfaceBranch }},${{ github.event.inputs.pluginRepoOwnerName }}\nsql-plugin,master"
 
 jobs:
   test_job:
